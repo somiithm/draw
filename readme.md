@@ -19,6 +19,7 @@ FLUSH PRIVILEGES ;
 
 ## Installation
 `git clone git@github.com:somiithm/draw.git`
+
 `cd draw`
 
 Copy example env into .env<br/>
