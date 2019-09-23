@@ -63,9 +63,9 @@
                     <form method="post" action="/draw">
                         @csrf
                         <div class="form-group">
-                            <label>Prize Types</label>
-                            <select id = "prize" name="prize_type">
-                                <option disabled selected value> -- select a prize -- </option>
+                            <label for="prize">Prize Types</label>
+                            <select class="form-control" id = "prize" name="prize_type">
+                                <option style="text-align: center" disabled selected value> -- select a prize -- </option>
                                 <option value = "1">Grand Prize</option>
                                 <option value = "2">Second Prize - 1st Winner</option>
                                 <option value = "3">Second Prize - 2nd Winner</option>
@@ -75,19 +75,19 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label>Generate Randomly</label>
-                            <select id = "prize" name="random">
-                                <option disabled selected value> -- select a prize -- </option>
+                            <label for="rand">Generate Randomly</label>
+                            <select class="form-control" id = "rand" name="random">
+                                <option disabled selected value> -- select yes/no -- </option>
                                 <option value = "yes">yes</option>
                                 <option value = "no">no</option>
                             </select>
                         </div>
                         <div class="form-group" style="margin-top: 20px">
                             <label>Winning Number</label>
-                            <input name="wnumber" type="text"/>
-                            <button type="submit">Draw</button>
+                            <input class="form-control" name="wnumber" type="text"/>
+                            <small>Needed if not generating randomly</small>
                         </div>
-
+                        <button class="btn btn-primary" type="submit">Draw</button>
                     </form>
                 </div>
             </div>
